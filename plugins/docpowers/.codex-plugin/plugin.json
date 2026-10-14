@@ -1,0 +1,16 @@
+{
+  "name": "docpowers",
+  "version": "0.1.0",
+  "description": "Composable documentation routing for repositories, packages, mathematical ecosystems, skills, and packs.",
+  "author": { "name": "agent-skills contributors" },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docpowers",
+    "shortDescription": "Improve and audit documentation with the right ecosystem conventions.",
+    "longDescription": "Route documentation work through small quality-focused leaves, executable examples, provenance, navigation, and package or mathematical ecosystem adapters.",
+    "developerName": "agent-skills contributors",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use using-docpowers to route this documentation task."
+  }
+}

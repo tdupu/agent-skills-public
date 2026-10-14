@@ -1,0 +1,15 @@
+{
+  "name": "leanpowers",
+  "version": "0.1.0",
+  "description": "Composable Lean formalization from natural-language mathematics, with compiler evidence and source fidelity.",
+  "author": {
+    "name": "agent-skills contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "lean",
+    "mathlib",
+    "formalization",
+    "mathematics"
+  ]
+}

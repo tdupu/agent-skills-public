@@ -1,0 +1,15 @@
+{
+  "name": "taucetipowers",
+  "version": "0.1.0",
+  "description": "Hygienic issue and pull-request workflows for Tau Ceti Lean contributions.",
+  "author": {
+    "name": "agent-skills contributors"
+  },
+  "keywords": [
+    "tauceti",
+    "lean",
+    "roadmap",
+    "github",
+    "pull-request"
+  ]
+}

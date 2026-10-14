@@ -1,0 +1,18 @@
+{
+  "name": "taucetipowers",
+  "version": "0.1.0",
+  "description": "Hygienic issue and pull-request workflows for Tau Ceti Lean contributions.",
+  "author": {
+    "name": "agent-skills contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Taucetipowers",
+    "shortDescription": "Prepare hygienic Tau Ceti issues and pull requests.",
+    "longDescription": "Route Tau Ceti issue reports and Lean PRs through live roadmap, coordination, build, attribution, and review gates.",
+    "developerName": "agent-skills contributors",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Use using-taucetipowers for Tau Ceti issue or pull-request work."
+  }
+}

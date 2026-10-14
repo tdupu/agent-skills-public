@@ -1,0 +1,18 @@
+{
+  "name": "leanpowers",
+  "version": "0.1.0",
+  "description": "Composable Lean formalization from natural-language mathematics, with compiler evidence and source fidelity.",
+  "author": {
+    "name": "agent-skills contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Leanpowers",
+    "shortDescription": "Formalize mathematics with Lean and Mathlib.",
+    "longDescription": "Route manuscript claims through representation, checked Lean proofs, semantic fidelity, review and maintenance.",
+    "developerName": "agent-skills contributors",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use using-leanpowers to formalize selected mathematical claims in this repository."
+  }
+}

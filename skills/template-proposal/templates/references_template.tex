@@ -1,0 +1,15 @@
+% References Cited — <<TITLE>>
+% Call: <<CALL>>. PAPPG <<PAPPG>> II.D.2.e: bibliographic entries only, no page
+% limit; every entry lists all authors, title, venue, volume, pages, year.
+% references.bib is shared with description.tex so the two agree.
+\documentclass[11pt]{amsart}
+\usepackage[letterpaper,margin=1in]{geometry}
+\pagenumbering{arabic}
+\begin{document}
+\title{References Cited}
+\maketitle
+\vspace{-1cm}
+\nocite{*}
+\bibliographystyle{amsalpha}
+\bibliography{references}
+\end{document}

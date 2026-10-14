@@ -1,0 +1,19 @@
+[
+  "using-testpowers",
+  "test-assess",
+  "test-unit",
+  "test-integration",
+  "test-regression",
+  "test-property",
+  "test-snapshot",
+  "test-smoke",
+  "test-entrypoint",
+  "test-coverage",
+  "test-skill",
+  "test-review",
+  "test-magma",
+  "test-sage",
+  "test-m2",
+  "test-lean",
+  "test-latex"
+]

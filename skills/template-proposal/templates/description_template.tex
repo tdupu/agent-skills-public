@@ -1,0 +1,146 @@
+% Project Description — <<TITLE>>
+% Call: <<CALL>> (read <<CALL_READ_DATE>>). Governing rules: PAPPG <<PAPPG>> II.D.2.d.
+% Limits from CALL.md: <<PD_PAGES>> pages total; Results from Prior NSF Support
+% at most <<PRIOR_PAGES>> of them; no URLs (name repositories in words; link
+% them in the Data Management Plan). Required headings: "Results from Prior
+% NSF Support" with "Intellectual Merit" and "Broader Impacts" inside it;
+% "Broader Impacts" as a section heading on its own line.
+% Style (using-pdpowers/references/PD-POLICY.md): third person ("the PI",
+% "this proposal"); short declarative sentences; the PI's own results in
+% prose with \cite; main definitions in `definition`, main conjectures in
+% `conjecture`; every project rests on a cited PI result and says in prose
+% what will exist afterwards; no run-in labels, no fixed-count step lists.
+% Labels: \item\label{item:<name>} on every enumerate item that is referred
+% to, cited as \eqref{item:<name>}; never "item 3" in prose.
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\pagenumbering{arabic}
+\newcommand{\taylor}[1]{{\color{red} \sf $\spadesuit\spadesuit\spadesuit$ Taylor: [#1]}}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{problem}{Problem}
+\newtheorem{project}{Project}
+\newtheorem{question}{Question}
+\numberwithin{equation}{section}
+
+\begin{document}
+\title[<<SHORT_TITLE>>]{<<TITLE>>}
+\maketitle
+\vspace{-1cm}
+
+%% ------------------------------------------------------------------
+\section{Overview}\label{S:overview}
+%% ------------------------------------------------------------------
+% About one page. In the order the panel reads it:
+% 1. The subject and the question in two sentences.
+% 2. What is already in hand (each result with its classical anchor).
+% 3. The method sentence: who drives, what the tools do; the
+%    solicitation's language in at most one short quotation.
+% 4. The list of projects, one clause each, with \ref to their subsections.
+% 5. What the proposal produces (the solicitation's measures of success:
+%    publications, data sets, tools, students trained).
+
+%% ------------------------------------------------------------------
+\section{Background}\label{S:background}
+%% ------------------------------------------------------------------
+\subsection{Introduction to the subject}
+% Definitions the panel needs, built by analogy with a classical subject.
+% Each main definition in \begin{definition}...\end{definition}; the
+% classical statement in `theorem` (at most two) and the conjecture that
+% generalizes it in `conjecture`, with attribution and date.
+
+\subsection{History and the state of the field}
+% Dated list of partial progress; who proved what; what is open now.
+
+\subsection{Previous work of the PI}
+% The PI's results the projects rest on, with citations. Published,
+% submitted with statement intact, or PI-verified only; everything else
+% is "agents report" or belongs in REVIEW.md.
+
+%% ------------------------------------------------------------------
+\section{Results from Prior NSF Support}\label{S:prior}
+%% ------------------------------------------------------------------
+% PAPPG II.D.2.d(iii). At most <<PRIOR_PAGES>> pages. One award: the most
+% closely related, current or ended within five years.
+\subsection*{<<PRIOR_AWARD_NUMBER>>, \emph{<<PRIOR_AWARD_TITLE>>}, <<PRIOR_AWARD_AMOUNT>>, <<PRIOR_AWARD_PERIOD>>}
+% (a) number, amount, period; (b) title — above.
+\subsubsection*{Intellectual Merit}
+% (c) numbered products, each with \cite; results in prose.
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+\item\label{item:prior-<<PRIOR_ITEM_1_SLUG>>}
+\end{enumerate}
+\subsubsection*{Broader Impacts}
+% (c) continued: what was done (students, software released, lectures).
+\subsubsection*{Publications and products}
+% (d) list of publications (full citations here or in References Cited),
+% or the sentence "No publications were produced under this award."
+% (e) research products and where they live (software, data, video).
+\subsubsection*{Relation to the proposed work}
+% (f) one or two sentences: which items each project starts from, as
+%     \eqref{item:prior-<<PRIOR_ITEM_1_SLUG>>}.
+
+%% ------------------------------------------------------------------
+\section{Method and Standards}\label{S:method}
+%% ------------------------------------------------------------------
+% How the work is done and what counts as a result. Define every term the
+% panel has not seen before (e.g. a dump, a saturated manuscript, fidelity
+% of a formalization). State the AI usage categories and how usage is
+% recorded. State the practices; do not argue for them or quote the
+% solicitation at length. The reader draws the conclusion that the tools
+% are "scientifically justified rather than incidental".
+\subsection{Standards every project meets}
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+\item
+\end{enumerate}
+\subsection{Tools and records}
+
+%% ------------------------------------------------------------------
+\section{Proposed Research}\label{S:proposed}
+%% ------------------------------------------------------------------
+% One \subsection per project, titled by its object or theorem, never an
+% activity. Plain prose, each paragraph opening with its topic sentence; no
+% run-in labels ("Built on:", "What is new.", "Plan."), no "Step 1" items.
+% Paragraphs in this order (pd-project): foundation (the PI result(s) this
+% rests on, cited, and the external theorems used); objective (one sentence
+% naming the theorem, object, database or tool that will exist); preliminary
+% results at verified strength (a small table of real records if data); plan
+% as prose or \subsubsection headings, each part naming its technique (a
+% numbered list only for a proof program); feasibility (what has run, at
+% what size, where the cost sits); dated status lines naming what is missing;
+% what the project yields if its question resolves either way; deliverables
+% and compute in prose. Name prior constructions of the same
+% kind and the senior people whose results are used; cite them fairly. A
+% conjecture the project attacks goes in `conjecture`, attributed.
+\subsection{<<PROJECT_1_TITLE>>}\label{S:project1}
+
+\subsection{<<PROJECT_2_TITLE>>}\label{S:project2}
+
+%% ------------------------------------------------------------------
+\section{Intellectual Merit}\label{S:merit}
+%% ------------------------------------------------------------------
+% One paragraph: why these problems, why now, why this PI.
+
+%% ------------------------------------------------------------------
+\section{Broader Impacts}\label{S:impact}
+%% ------------------------------------------------------------------
+% Heading must read exactly "Broader Impacts" (PAPPG). One paragraph per
+% item (textbook; open-source tools and data; students; seminars and
+% visitors; lectures online), each opening with the done thing, dated, then
+% its continuation. Plain paragraphs; no \textbf{...} run-in labels.
+
+
+\newpage\label{S:bibstart}
+% Bibliography here is for citation resolution only; build.sh trims it from
+% description.pdf. References Cited is a separate document.
+\bibliographystyle{amsalpha}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,8 @@
+{
+  "name": "testpowers",
+  "version": "0.1.0",
+  "description": "Composable testing routing for unit, integration, regression, property, snapshot, entrypoint, and mathematical ecosystem tests.",
+  "author": { "name": "agent-skills contributors" },
+  "license": "MIT",
+  "keywords": ["testing", "unit-tests", "regressions", "quality", "mathematics"]
+}

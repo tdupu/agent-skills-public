@@ -1,0 +1,8 @@
+{
+  "name": "docpowers",
+  "version": "0.1.0",
+  "description": "Composable documentation routing for repositories, packages, mathematical ecosystems, skills, and packs.",
+  "author": { "name": "agent-skills contributors" },
+  "license": "MIT",
+  "keywords": ["documentation", "packages", "skills", "packs", "mathematics"]
+}

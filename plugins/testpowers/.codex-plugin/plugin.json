@@ -1,0 +1,16 @@
+{
+  "name": "testpowers",
+  "version": "0.1.0",
+  "description": "Composable testing routing for unit, integration, regression, property, snapshot, entrypoint, and mathematical ecosystem tests.",
+  "author": { "name": "agent-skills contributors" },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Testpowers",
+    "shortDescription": "Design meaningful tests at the layer that retires the risk.",
+    "longDescription": "Route test work through thin risk-specific leaves with historical regressions, honest coverage, user-entrypoint checks, and ecosystem adapters.",
+    "developerName": "agent-skills contributors",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use using-testpowers to route this testing task."
+  }
+}
