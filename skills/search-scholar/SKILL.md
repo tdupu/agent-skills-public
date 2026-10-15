@@ -9,18 +9,19 @@ The [Semantic Scholar Academic Graph API](https://api.semanticscholar.org) is th
 
 Use configured MCP servers:
 
-- **scholar-mcp** — built-in FastMCP stdio wrapper at `mathcity/subdomains/lean/mcp/scholar/`; see §Setup.
+- **scholar-mcp** — FastMCP stdio wrapper in this repository at `mcp/scholar/`; see §Setup.
 - Community alternatives: search `uvx semantic-scholar-mcp` or similar; verify source before installing.
 
 ## Setup (one-time, requires human approval)
 
 ```bash
-# 1. Install the mathcity scholar-mcp server
-cd <mathcity-pack-root>/subdomains/lean/mcp/scholar
-pip install -e .
+# 1. Install scholar-mcp from this repository
+cd <agent-skills-public>/mcp/scholar
+python3 -m venv ~/.venvs/math-mcp
+~/.venvs/math-mcp/bin/python -m pip install -e .
 
 # 2. Wire it to Claude
-claude mcp add --transport stdio scholar -- python -m scholar_mcp.server
+claude mcp add scholar -- ~/.venvs/math-mcp/bin/scholar-mcp
 
 # 3. (Optional) Request an individual API quota
 # Apply at: https://www.semanticscholar.org/product/api#api-key-form
