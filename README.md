@@ -121,8 +121,23 @@ mcp/           MCP servers for the Stacks Project and Semantic Scholar
 
 Skills by Taylor Dupuy, written with Claude.
 
+## Citing
+
+```bibtex
+@misc{dupuy2026agentskills,
+  author       = {Dupuy, Taylor},
+  title        = {agent-skills-public},
+  year         = {2026},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/tdupu/agent-skills-public}},
+  note         = {GitHub repository}
+}
+```
+
 ## License
 
-The `plugins/` packages and `superpowers/` are MIT-licensed; see the LICENSE
-file in each folder. The `mcp/` servers are MIT-licensed, as declared in their
-`pyproject.toml`. Third-party skills keep their upstream licenses.
+This repository is licensed under the GNU General Public License v3.0; see
+[LICENSE](LICENSE). Exceptions: the `plugins/` packages and `superpowers/` are
+MIT-licensed (see the LICENSE file in each folder), the `mcp/` servers are
+MIT-licensed as declared in their `pyproject.toml`, and third-party skills keep
+their upstream licenses.
