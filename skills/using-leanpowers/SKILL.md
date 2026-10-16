@@ -57,8 +57,8 @@ tighten defaults, but it does not replace global quality floors. Use
 or a global leanpowers amendment.
 
 Source attribution (global default). In Lean written for Tau Ceti or Mathlib,
-including roadmap `Suggested.lean` prototypes, every definition or theorem that
-corresponds to a Stacks Project tag carries Mathlib's `@[stacks XXXX]`
+including roadmap `Suggested.lean` prototypes, a result that is in the Stacks
+Project is stated in the form of its tag and carries Mathlib's `@[stacks XXXX]`
 attribute; a prose citation does not replace it. Fetch the tag with
 `search-stacks` and compare statements. When only a clause or restricted case is
 formalized, name it in the comment, e.g. `@[stacks 0BMB "affine, at a point"]`,
