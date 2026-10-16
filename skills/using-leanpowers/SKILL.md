@@ -56,6 +56,17 @@ tighten defaults, but it does not replace global quality floors. Use
 `new-powers-policy` when the user explicitly requests either a local override
 or a global leanpowers amendment.
 
+Source attribution (global default). In Lean written for Tau Ceti or Mathlib,
+including roadmap `Suggested.lean` prototypes, every definition or theorem that
+corresponds to a Stacks Project tag carries Mathlib's `@[stacks XXXX]`
+attribute; a prose citation does not replace it. Fetch the tag with
+`search-stacks` and compare statements. When only a clause or restricted case is
+formalized, name it in the comment, e.g. `@[stacks 0BMB "affine, at a point"]`,
+and when the statement deviates, add a "Divergence from Stacks" note to the
+docstring. Cite every other source in the docstring with a pinpoint: the
+numbered result when you can verify it, otherwise chapter and section. Never
+supply a number you have not checked.
+
 For competing routes, establish the baseline, align the claim, then perform the
 requested change and its checks. Compilation and source fidelity are separate
 gates. Read-only and plan-only requests retain that scope. Generic software work

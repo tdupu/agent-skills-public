@@ -25,7 +25,8 @@ Resolve target/kind/policy/authorization; unresolved: stop.
 | Roadmap-only intake | read-only `pr-pipeline-tauceti`: target/claim only; no diff/package, file/branch/remote/PR writes; return evidence/blockers |
 | Issue plus PR | approved body+URL—or explicit no-issue decision—then fresh PR intake; no stale issue evidence |
 | Lean contribution outside Tau Ceti | `lean-prepare-pr` |
-| Change roadmap | stop; ask its owner |
+| Human asks for a new roadmap area or change | `draft-roadmap`, which fixes its format and location; the human files it, agents never open TauCetiRoadmap PRs or issues (Tau Ceti `AGENTS.md`) |
+| Change roadmap, no human request | stop; ask its owner |
 
 | Thought | Reality |
 |---|---|

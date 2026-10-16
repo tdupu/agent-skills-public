@@ -45,6 +45,17 @@ never looked, exiting 0. Quote the pattern (`ls 'A*'`) or use `find`. Do not
 runs the command without it, which is worse than the loud failure. And never let
 `||` supply an absence verdict for a command that may not have executed.
 
+A roadmap for a project with its own roadmap repository, such as Tau Ceti's,
+takes that repository's format but lives in the source repository: write it,
+its PR or issue draft and a `README.md` (contents, pins, check results,
+"nothing filed") under `<lean-workspace>/tauceti/` (`lean-project` locates the
+workspace; with none, `<repo>/tauceti/`). A change to an existing area copies
+it at a recorded upstream commit. A clone or worktree of the roadmap repository
+is scratch for its own checks only; leave nothing there. `Suggested.lean` is not
+a Lean module: keep it out of every `lean_lib` and out of Palomar or public
+submissions. The human files it. This skill's schema supplies the evidence
+checks.
+
 ## Inputs must be literal
 
 An `inputs` or `outputs` entry is a name that greps, a tag that fetches, or a path
