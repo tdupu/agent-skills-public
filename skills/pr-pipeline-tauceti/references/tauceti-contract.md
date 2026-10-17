@@ -1,6 +1,7 @@
 # Tau Ceti contribution contract
 
 Read this with the target checkout's current policy files; live instructions win.
+Last checked against TauCeti `fcfb0af` and TauCetiRoadmap `350e970` (2026-10-17).
 
 ## Scope and attribution
 
@@ -8,10 +9,12 @@ Read this with the target checkout's current policy files; live instructions win
   is AI-authored mathematics. `scripts/`, `.github/`, and the lakefile are
   human-owned; `lake-manifest.json` and `lean-toolchain` are exceptions only for
   validated forward bumps.
-- One topic per PR. New declarations, definitions, instances, notation, or files
-  need an exact `TauCetiRoadmap` target or a demonstrable prerequisite. Refactors,
-  proof simplifications, modest generalizations, relocations, and documentation
-  improvements need no new target but name the motivating area.
+- One topic per PR, never stacked (drafts included): open a dependent only after
+  its prerequisite lands on `main`. New declarations, definitions, instances,
+  notation, or files need an exact `TauCetiRoadmap` target or a demonstrable
+  prerequisite. Refactors, proof simplifications, modest generalizations,
+  relocations, and documentation improvements need no new target but name the
+  motivating area.
 - Use one standalone `Roadmap: CanonicalAreaName` or `Roadmap: none`. `none` is
   only for genuinely general, cross-cutting, infrastructure, or dependency work;
   do not infer an area from a `TauCeti/` path. New math cites the exact roadmap
@@ -19,8 +22,10 @@ Read this with the target checkout's current policy files; live instructions win
 
 ## Coordination and branch safety
 
-- Before authoring a roadmap target, verify the documented intention/claim process.
-  The cooperative key is `author/<focus>/<target-id>` and the PR marker is:
+- Before authoring a roadmap target, find a live claim: an unexpired intention
+  the requesting human filed and holds, or our worker lease key
+  `author/<focus>/<target-id>`; another owner's live claim stops. The PR
+  marker is:
 
   ```text
   <!--tauceti-target:v1 {"focus":"<area>","id":"<canonical-target-id>"}-->
@@ -49,13 +54,14 @@ Read this with the target checkout's current policy files; live instructions win
   marked `tauceti-scoreboard` with its `tauceti-meta:v1` block. Missing or stale
   marker means unreviewed. New commits require fresh review.
 - `tauceti-review PR` is read-only by default; `--post` publishes and needs
-  explicit authorization. Merge only with green CI and every blocking rubric green
-  for the current head. Never `--admin`; do not close/abandon without visible
-  budget or documented stale/duplicate evidence.
+  explicit authorization. The agent's job ends at green CI and every blocking
+  rubric green for the current head; merge, close and dedup belong to the repo's
+  CI and bors. Never `--admin`.
 
 ## Mechanical quality floor
 
-Check path scope, reuse, truthful statements, placement, naming, docs, and no
-compatibility shims. Run pinned Lean checks, applicable linter, `lake build`, and
-axiom/full-type inspection. Record exact commands and revisions. A passing build
-is not formalization, roadmap, or review approval.
+Check path scope, reuse, truthful statements, placement, naming, docs, and each
+rule in `AGENTS.md` §The rules of the repo at the observed commit. Run pinned
+Lean checks, applicable linter, `lake build`, and axiom/full-type inspection.
+Record exact commands and revisions. A passing build is not formalization,
+roadmap, or review approval.

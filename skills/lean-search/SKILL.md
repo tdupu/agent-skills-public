@@ -44,7 +44,8 @@ not automatically a Mathlib theorem, a novelty claim, or a proof of the
 current target.
 
 For Tau Ceti, search the pinned `TauCetiProject/TauCeti` checkout for code and
-the separate `TauCetiRoadmap` checkout for human-owned targets. Generated API
+the separate `TauCetiRoadmap` checkout for human-owned targets; open PR heads
+are a further source neither checkout shows. Generated API
 docs are useful navigation only; use the published `docs/SOURCE_SHA` or the
 repository commit when freshness matters. A roadmap statement or review
 verdict is source/process evidence, not a Lean certificate.

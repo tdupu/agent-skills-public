@@ -84,7 +84,9 @@ using a declaration. The primary repositories are:
   review machinery, not theorem statements.
 
 Use exact file/module paths and `git rev-parse HEAD` receipts for source hits.
-The generated API site at `https://taucetiproject.github.io/TauCeti/docs` is
+Open PR heads (TauCeti, TauCetiRoadmap, mathlib4) are separate sources the
+pinned checkout cannot show; record each hit's PR number and head SHA.
+The generated API site at `https://taucetiproject.org/docs/` is
 best-effort navigation; when using it, read `/docs/SOURCE_SHA` and keep that
 SHA with the result. A roadmap item, generated documentation page or review
 verdict is not a Lean certificate. For a declaration intended for reuse,

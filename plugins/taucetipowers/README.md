@@ -1,8 +1,9 @@
 # Taucetipowers
 
 Invoke **using-taucetipowers** for work intended for
-`TauCetiProject/TauCeti`. It routes issue drafting to `create-issue-tauceti`
-and Lean contribution work to `pr-pipeline-tauceti`, while composing with
+`TauCetiProject/TauCeti`. It routes issue drafting to `create-issue-tauceti`,
+Lean contribution work to `pr-pipeline-tauceti`, and read-only triage of
+existing work to `tauceti-triage`, while composing with
 Leanpowers for formalization, verification, and feedback.
 
 The package is policy-driven: it reads the target checkout's current rules and

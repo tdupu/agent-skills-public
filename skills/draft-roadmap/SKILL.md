@@ -54,7 +54,10 @@ it at a recorded upstream commit. A clone or worktree of the roadmap repository
 is scratch for its own checks only; leave nothing there. `Suggested.lean` is not
 a Lean module: keep it out of every `lean_lib` and out of Palomar or public
 submissions. The human files it. This skill's schema supplies the evidence
-checks.
+checks. For Tau Ceti, first read TauCetiRoadmap README §Writing a roadmap and
+§Porting existing work, and its CONTRIBUTING; this skill's status vocabulary
+(blocked, conditional, dispatch) and review records stay in the workspace
+notes, never in the roadmap text to be filed.
 
 ## Inputs must be literal
 

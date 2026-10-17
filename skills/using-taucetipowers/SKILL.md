@@ -27,6 +27,10 @@ Resolve target/kind/policy/authorization; unresolved: stop.
 | Lean contribution outside Tau Ceti | `lean-prepare-pr` |
 | Human asks for a new roadmap area or change | `draft-roadmap`, which fixes its format and location; the human files it, agents never open TauCetiRoadmap PRs or issues (Tau Ceti `AGENTS.md`) |
 | Change roadmap, no human request | stop; ask its owner |
+| Triage existing Lean against roadmaps, TauCeti code, or mathlib4 PRs | `tauceti-triage` (read-only) |
+| Comment on someone else's roadmap or code PR | draft only; the human posts. Follow the target repo's review rules (TauCetiRoadmap `AGENTS.md`, CONTRIBUTING: :robot: + model, defects first). On a queued code PR, check TauCeti `COORDINATION.md` §5 (a commenter becomes its steward); assess with read-only `tauceti-review <PR>` |
+| Intention issue for a roadmap target | `create-issue-tauceti` TauCetiRoadmap draft; the human files and claims it |
+| Port code from another Lean/Mathlib pin | `lean-upgrade` to TauCeti's current pin, then the PR route |
 
 | Thought | Reality |
 |---|---|
