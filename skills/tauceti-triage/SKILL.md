@@ -29,6 +29,8 @@ stacking). Absence claims follow `draft-roadmap`'s evidence rules: a positive
 control and a leaf-name search, not one keyword query.
 
 Write the report in the source repository (`ai/<date>-tauceti-triage/` or
-`<lean-workspace>/tauceti/`), marking each fact verified or unverified. Worked
-example: `tdupu/pcf` `ai/2026-10-17-tauceti-triage/` (CODE, ROADMAP, MATHLIB,
-PLAN) with `lean/tauceti/INTAKE.md` and `CONFLICTS.md`.
+`<lean-workspace>/tauceti/`), marking each fact verified or unverified. A
+typical report has one file per source (roadmap, TauCeti code, Mathlib PRs), a
+plan with the decisions left to the human, and a conflicts table listing each
+overlapping claimant, their item, the local declarations, and the proposed
+division.
