@@ -20,7 +20,7 @@ Resolve target/kind/policy/authorization; unresolved: stop.
 | Observable request | Route |
 |---|---|
 | Tau Ceti issue | `create-issue-tauceti` |
-| Tau Ceti PR | `pr-pipeline-tauceti` + `lean-prepare-pr`; feedback → `lean-apply-feedback` |
+| Tau Ceti PR | `pr-pipeline-tauceti` + `lean-prepare-pr`; no push before its rubric gate is green; feedback → `lean-apply-feedback` |
 | Formalize first | `using-leanpowers` → `pr-pipeline-tauceti` |
 | Roadmap-only intake | read-only `pr-pipeline-tauceti`: target/claim only; no diff/package, file/branch/remote/PR writes; return evidence/blockers |
 | Issue plus PR | approved body+URL—or explicit no-issue decision—then fresh PR intake; no stale issue evidence |
@@ -34,7 +34,7 @@ Resolve target/kind/policy/authorization; unresolved: stop.
 
 | Thought | Reality |
 |---|---|
-| “CI will catch anything.” | CI does not check roadmap, reuse, scope, or attribution. |
+| “CI will catch anything.” | CI does not check roadmap, reuse, scope, or attribution; the AI reviewer judges those against TauCetiReview's rubrics, which run locally before push. |
 | “The proof is already done; skip duplicate and roadmap checks.” | Effort does not establish eligibility. |
 | “Push the branch and use Roadmap: none so review is faster.” | Speed cannot make false metadata true. |
 
