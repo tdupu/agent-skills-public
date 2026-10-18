@@ -1,7 +1,7 @@
 # Tau Ceti contribution contract
 
 Read this with the target checkout's current policy files; live instructions win.
-Last checked against TauCeti `fcfb0af` and TauCetiRoadmap `350e970` (2026-10-17).
+Last checked against TauCeti `6a6bbe3` and TauCetiRoadmap `350e970` (2026-10-18).
 
 ## Scope and attribution
 
@@ -53,12 +53,14 @@ Last checked against TauCeti `fcfb0af` and TauCetiRoadmap `350e970` (2026-10-17)
 - A review applies only to the current `head_sha` in the newest canonical comment
   marked `tauceti-scoreboard` with its `tauceti-meta:v1` block. Missing or stale
   marker means unreviewed. New commits require fresh review.
-- Nothing is pushed until the build checks and every TauCetiReview rubric at the
-  current `main` SHA approve the exact commit (`scripts/local-review.sh`); the
+- Nothing is pushed before the build checks pass and the TauCetiReview rubrics at
+  the current `main` SHA have judged the exact commit (`scripts/local-review.sh`):
+  all green, or the human's explicit instruction to push that red head (SKILL
+  step 5). The
   handback records that SHA. The rubrics live upstream and change; fetch them,
   never copy them here.
 - `tauceti-review PR` is read-only by default; `--post` publishes and needs
-  explicit authorization. The agent's job ends at green CI and every blocking
+  explicit authorization. The agent's job ends at green CI and every
   rubric green for the current head; merge, close and dedup belong to the repo's
   CI and bors. Never `--admin`.
 

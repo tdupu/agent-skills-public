@@ -17,6 +17,6 @@ Prepare an issue for `TauCetiProject/TauCeti`; if not issue-shaped, return to th
 
 **Approval gate:** show the complete title and body for the issue or comment and stop. On `REVISE`, redraft; on `REJECT`, stop. Only after explicit `APPROVE` may you run `gh issue create --repo TauCetiProject/TauCeti --title ... --body-file ...` with verified labels, or post the approved comment. Report the URL; do not close, merge, or alter a roadmap item.
 
-**TauCetiRoadmap:** same draft package, but never run `gh` there; the human files it and comments `claim`. Read its README §Coordinating work (merged areas only, claim TTL, `disclaim`); the TauCeti PR links it with `Closes TauCetiProject/TauCetiRoadmap#N`. Mark AI text :robot: with the model.
+**TauCetiRoadmap:** same draft package, but never run a mutating `gh` command there (reads are fine); the human files it and comments `claim`. Read its README §Coordinating work. An intention is only for a merged area (the form's dropdown lists only those) and names the narrowest scope: the targets the next PR takes. Draft it shortly before that PR is ready, since claims expire (30 days by default). Verify the human is the assignee before the PR opens. The TauCeti PR links it with `Closes TauCetiProject/TauCetiRoadmap#N`, but that cross-repo link does not close it: after merge, tell the human to close it. Mark AI text :robot: with the model.
 
 Red flags: “the issue is obvious,” “main probably still has it,” “the template is stable,” and “I can file now and fix the body later.” Each means return to the corresponding gate.

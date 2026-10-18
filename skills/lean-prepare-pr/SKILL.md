@@ -12,6 +12,10 @@ Read the target repository's current contribution rules and PR template.
 Summarize the concrete mathematical result and why the API belongs there.
 Use `lean-mathlib-fit` when Mathlib inclusion is intended. Confirm source/license
 attribution, useful documentation, imports, statement shape and compatible pins.
+Unless the target's rules say otherwise, ported code records its provenance in the
+module docstring, not only the PR body:
+under `## References`, "Ported from <authors>, <repo> at commit <sha> (<licence>),
+<file>", naming the original declarations.
 
 Run `lean-style`, `lean-review`, `lean-verify` and `lean-fidelity` as applicable
 to the current snapshot. Account for every finding; keep scope bounded and

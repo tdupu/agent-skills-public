@@ -1,7 +1,7 @@
 {
   "name": "taucetipowers",
-  "version": "0.1.0",
-  "description": "Hygienic issue and pull-request workflows for Tau Ceti Lean contributions.",
+  "version": "0.2.0",
+  "description": "Hygienic Tau Ceti workflows: contributing an existing Lean development, roadmap PRs, intentions, issues, and code pull requests.",
   "author": {
     "name": "agent-skills contributors"
   },

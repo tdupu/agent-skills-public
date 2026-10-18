@@ -20,10 +20,14 @@ PR head SHA or fetch time:
 - TauCeti `main` and open TauCeti PRs (`tauceti-target` markers, claim refs);
 - open mathlib4 PRs, and Mathlib at TauCeti's pin.
 
+The search API's rate limit cuts sweeps short: list open PRs and
+issues through the core API (`gh api --paginate`), search them locally, and
+record the counts.
+
 Per target, one outcome: **adopt** an existing TauCeti/Mathlib object (ours is
 deleted or bridged by an equivalence); **build in the shape of** an open mathlib4
 PR (never wait for it); **coordinate** with an open TauCeti PR, intention or
-roadmap PR author; **not on a merged roadmap** (route to `draft-roadmap`); or
+roadmap PR author; **not on a merged roadmap** (route to `roadmap-pr-tauceti`); or
 **first-PR candidate**, with its size, prerequisites and landing order (no
 stacking). Absence claims follow `draft-roadmap`'s evidence rules: a positive
 control and a leaf-name search, not one keyword query.

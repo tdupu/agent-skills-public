@@ -45,19 +45,14 @@ never looked, exiting 0. Quote the pattern (`ls 'A*'`) or use `find`. Do not
 runs the command without it, which is worse than the loud failure. And never let
 `||` supply an absence verdict for a command that may not have executed.
 
-A roadmap for a project with its own roadmap repository, such as Tau Ceti's,
-takes that repository's format but lives in the source repository: write it,
-its PR or issue draft and a `README.md` (contents, pins, check results,
-"nothing filed") under `<lean-workspace>/tauceti/` (`lean-project` locates the
-workspace; with none, `<repo>/tauceti/`). A change to an existing area copies
-it at a recorded upstream commit. A clone or worktree of the roadmap repository
-is scratch for its own checks only; leave nothing there. `Suggested.lean` is not
-a Lean module: keep it out of every `lean_lib` and out of Palomar or public
-submissions. The human files it. This skill's schema supplies the evidence
-checks. For Tau Ceti, first read TauCetiRoadmap README §Writing a roadmap and
-§Porting existing work, and its CONTRIBUTING; this skill's status vocabulary
-(blocked, conditional, dispatch) and review records stay in the workspace
-notes, never in the roadmap text to be filed.
+A roadmap for a project with its own roadmap repository takes that
+repository's format and is drafted in the source repository; for Tau Ceti,
+`roadmap-pr-tauceti` (taucetipowers) owns the format, location, checks and
+hand-off. Without that skill, read TauCetiRoadmap README §Writing a roadmap,
+§Porting existing work, §Filing a roadmap and CONTRIBUTING; the draft stays in
+the source repository and the human files it. This
+skill's status vocabulary (blocked, conditional, dispatch) and review records
+stay in the workspace notes, never in roadmap text to be filed.
 
 ## Inputs must be literal
 

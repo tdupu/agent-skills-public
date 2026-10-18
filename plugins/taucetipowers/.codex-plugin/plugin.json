@@ -1,15 +1,15 @@
 {
   "name": "taucetipowers",
-  "version": "0.1.0",
-  "description": "Hygienic issue and pull-request workflows for Tau Ceti Lean contributions.",
+  "version": "0.2.0",
+  "description": "Hygienic Tau Ceti workflows: contributing an existing Lean development, roadmap PRs, intentions, issues, and code pull requests.",
   "author": {
     "name": "agent-skills contributors"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Taucetipowers",
-    "shortDescription": "Prepare hygienic Tau Ceti issues and pull requests.",
-    "longDescription": "Route Tau Ceti issue reports and Lean PRs through live roadmap, coordination, build, attribution, and review gates.",
+    "shortDescription": "Prepare hygienic Tau Ceti roadmap PRs, intentions, issues and code PRs.",
+    "longDescription": "Route Tau Ceti contributions — an existing development end to end, roadmap PRs, intentions, issue reports and Lean PRs — through live roadmap, coordination, build, attribution, and review gates.",
     "developerName": "agent-skills contributors",
     "category": "Developer Tools",
     "capabilities": [],

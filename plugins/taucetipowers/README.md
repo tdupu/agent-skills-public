@@ -2,9 +2,11 @@
 
 Invoke **using-taucetipowers** for work intended for
 `TauCetiProject/TauCeti`. It routes issue drafting to `create-issue-tauceti`,
-Lean contribution work to `pr-pipeline-tauceti`, and read-only triage of
-existing work to `tauceti-triage`, while composing with
-Leanpowers for formalization, verification, and feedback.
+Lean contribution work to `pr-pipeline-tauceti`, read-only triage of
+existing work to `tauceti-triage`, TauCetiRoadmap PR drafting and hand-off to
+`roadmap-pr-tauceti`, and contributing an existing development end to end to
+`contribute-to-tauceti`, while composing with Leanpowers for formalization,
+verification, and feedback.
 
 The package is policy-driven: it reads the target checkout's current rules and
 live GitHub templates, requires exact roadmap attribution for new mathematics,
